@@ -1,0 +1,26 @@
+---
+mailboxes:
+  - name: support
+    server: mail.your-server.de
+    port: 993
+    username: support@berryit.de
+    password: HIDDEN
+  - name: info
+    server: mail.your-server.de
+    port: 993
+    username: info@berryit.de
+    password: HIDDEN
+
+users:
+  - username: andre
+    password: andre
+    mailboxes:
+      - support
+      - info
+  - username: bob
+    password: bob
+    mailboxes:
+      - support
+
+server:
+  listen: ":8080"
